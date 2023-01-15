@@ -44,14 +44,14 @@ body {
   cursor: pointer;
 }
 
-.phone {
+.phone-number {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 23%;
 }
 
-.underlined {
+.accent {
   text-decoration: underline #e3b873;
 }
 
@@ -455,7 +455,6 @@ body {
   background-color: #e3b873;
 }
 
-/*stages*/
 .stages_measure_flex {
   display: flex;
   justify-content: space-between;
@@ -965,7 +964,7 @@ body {
     display: none;
   }
 
-  .underlined {
+  .accent {
     color: white;
     text-decoration: none;
   }
