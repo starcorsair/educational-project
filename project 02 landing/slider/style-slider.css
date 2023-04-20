@@ -1,0 +1,263 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1208px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.btn {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1;
+  background-color: #e3b873;
+  text-transform: uppercase;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  color: #e3b873;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider_section {
+  padding-top: 50px;
+  padding-bottom: 3px;
+  height: 47vw;
+  color: #ffffff;
+  background-color: #131313;
+}
+
+.slider_chapter_list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.slider_chapter_item {
+  margin-right: 58px;
+}
+
+.slider_chapter_btn {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 39px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border: none;
+  transition: color 0.2s linear;
+}
+
+.slider_chapter_btn:hover,
+.slider_chapter_btn:focus-visible {
+  color: #e3b873;
+}
+
+.slider_chapter_btn:active {
+  color: var(--color-bronzegold);
+}
+
+.slider_chapter_btn hr {
+  margin: 0;
+  margin-top: -7px;
+  border-color: transparent;
+  transition: border-color 0.2s linear;
+}
+
+.slider_chapter_btn.is-active,
+.is-active hr {
+  color: #e3b873;
+  border-color: #e3b873;
+  pointer-events: none;
+}
+
+.slider_content_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_content_text {
+  max-width: 442px;
+  margin-right: 50px;
+}
+
+.slider_title {
+  font-size: 27px;
+  line-height: 34px;
+  color: #e3b873;
+  letter-spacing: -1.8px;
+  margin-bottom: 29px;
+}
+
+.slider_descr {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 52px;
+}
+
+.slider_p_list {
+  display: grid;
+  grid-template-columns: 156px 1fr;
+  gap: 34px;
+  margin-bottom: 81px;
+}
+
+.slider_p_subtitle {
+  margin-bottom: 9px;
+}
+
+.slider_p_descr {
+  font-size: 13px;
+  line-height: 21px;
+  display: none;
+  opacity: 0;
+}
+
+.slider_p_descr.city.is-active,
+.slider_p_descr.area.is-active,
+.slider_p_descr.time.is-active,
+.slider_p_descr.cost.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.slider_tab_nav {
+  display: flex;
+  align-items: center;
+}
+
+.slider_tab_nav_btn:hover path,
+.slider_tab_nav_btn:focus-visible path {
+  fill: #e3b873;
+  transition: fill 0.2s linear;
+}
+
+.slider_tab_nav_btn:active path {
+  fill: #e3b873;
+  transition: fill 0.2s linear;
+}
+
+.slider_tab_nav_btn.prev {
+  margin-right: 29px;
+}
+
+.slider_tab_pagination_wrap {
+  display: flex;
+  margin-right: 29px;
+}
+
+.slider_pagination_bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  transition: background-color 0.2s linear;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider_pagination_bullet:not(:last-child) {
+  margin-right: 17px;
+}
+
+.slider_pagination_bullet.is-active {
+  background-color: #ffffff;
+}
+
+.slider_pagination_bullet.is-active:hover {
+  background-color: #ffffff;
+}
+
+.slider_pagination_bullet:hover,
+.slider_pagination_bullet:focus-visible {
+  background-color: #959595;
+}
+.slider_pagination_bullet:active {
+  background-color: #ffffff;
+}
+
+.slider_tab_nav_btn,
+.fantasies_slider_nav_btn_prev,
+.fantasies_slider_nav_btn_next {
+  font-size: 0;
+  background-color: transparent;
+}
+
+.slider_content_slider {
+  max-width: 679px;
+  min-height: 484px;
+}
+
+.slider_content_slider.mobile {
+  display: none;
+}
+
+.slider_content_image {
+  display: none;
+  width: 100%;
+  height: 484px;
+  opacity: 0;
+}
+
+.slider_content_image.is-active {
+  display: flex;
+  opacity: 1;
+}
+
+.slider_content_image.mobile {
+  display: none;
+}
